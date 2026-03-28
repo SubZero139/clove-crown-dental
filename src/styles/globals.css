@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@import "lenis/dist/lenis.css";
+
+:root {
+  --color-sage: #7c9082;
+  --color-ivory: #faf7f2;
+  --color-terracotta: #c4836a;
+  --color-charcoal: #2d2d2d;
+  --color-dusty-rose: #d4b5a0;
+  --color-sand: #f3eee8;
+  --font-heading: "Playfair Display", serif;
+  --font-body: "DM Sans", sans-serif;
+}
+
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+@theme inline {
+  --font-sans: var(--font-body);
+}
+
+body {
+  background: var(--color-ivory);
+  color: var(--color-charcoal);
+  font-family: var(--font-body), sans-serif;
+}

@@ -28,14 +28,14 @@
 
 ### Checklist
 
-- [ ] Initialise Next.js project (`npx create-next-app@latest clove-crown-dental`)
-- [ ] Install dependencies:
-  - [ ] `lenis` (smooth scroll)
-  - [ ] `gsap` (animations)
-  - [ ] `@gsap/react` (React integration)
-  - [ ] `split-type` (text splitting for hero animation)
-  - [ ] `swiper` (hero carousel)
-- [ ] Create folder structure:
+- [x] Initialise Next.js project (`npx create-next-app@latest clove-crown-dental`)
+- [x] Install dependencies:
+  - [x] `lenis` (smooth scroll)
+  - [x] `gsap` (animations)
+  - [x] `@gsap/react` (React integration)
+  - [x] `split-type` (text splitting for hero animation)
+  - [x] `swiper` (hero carousel)
+- [x] Create folder structure:
   ```
   src/
     components/
@@ -60,7 +60,7 @@
       page.tsx
       layout.tsx
   ```
-- [ ] Create `lib/config.ts` with all site constants:
+- [x] Create `lib/config.ts` with all site constants:
   ```ts
   export const SITE_CONFIG = {
     name: "Clove & Crown Dental",
@@ -78,7 +78,7 @@
     },
   };
   ```
-- [ ] Set up CSS variables in `globals.css`:
+- [x] Set up CSS variables in `globals.css`:
   ```css
   :root {
     --color-sage: #7C9082;
@@ -91,14 +91,14 @@
     --font-body: 'DM Sans', sans-serif;
   }
   ```
-- [ ] Import Google Fonts (Playfair Display 500/600/700, DM Sans 400/500/700) in layout
-- [ ] Set global body styles: `background: var(--color-ivory)`, `color: var(--color-charcoal)`, `font-family: var(--font-body)`
-- [ ] Initialise Lenis smooth scroll in layout (wrap app, start on mount, destroy on unmount)
-- [ ] Verify Lenis is working — page should scroll smoothly
-- [ ] Create reusable `<Button>` component with two variants: `primary` (terracotta bg, white text) and `secondary` (sage outline)
-- [ ] Create reusable `<SectionHeading>` component (Playfair Display, consistent sizing across sections)
-- [ ] Create `dev` branch, commit all scaffolding, push to GitHub
-- [ ] Add chatbot placeholder comment in layout: `<!-- CHATBOT EMBED SCRIPT HERE -->`
+- [x] Import Google Fonts (Playfair Display 500/600/700, DM Sans 400/500/700) in layout
+- [x] Set global body styles: `background: var(--color-ivory)`, `color: var(--color-charcoal)`, `font-family: var(--font-body)`
+- [x] Initialise Lenis smooth scroll in layout (wrap app, start on mount, destroy on unmount)
+- [x] Verify Lenis is working — page should scroll smoothly
+- [x] Create reusable `<Button>` component with two variants: `primary` (terracotta bg, white text) and `secondary` (sage outline)
+- [x] Create reusable `<SectionHeading>` component (Playfair Display, consistent sizing across sections)
+- [x] Create `dev` branch, commit all scaffolding, push to GitHub
+- [x] Add chatbot placeholder comment in layout: `<!-- CHATBOT EMBED SCRIPT HERE -->`
 
 ### Phase 1 — Done Criteria
 The project runs locally with `npm run dev`. Page is blank except for the warm ivory background. Smooth scroll is active. All dependencies installed. Folder structure exists. Config constants set.

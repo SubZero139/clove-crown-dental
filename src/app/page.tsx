@@ -1,8 +1,9 @@
+import { Hero } from "@/components/Hero";
+
 export default function Home() {
   return (
-    <main className="min-h-screen pt-20">
-      {/* Tall block so sticky navbar blur (after 100px scroll) can be verified before later phases */}
-      <div className="h-[120vh]" aria-hidden />
+    <main className="min-h-screen">
+      <Hero />
       <section
         id="services"
         className="min-h-[25vh] scroll-mt-24"

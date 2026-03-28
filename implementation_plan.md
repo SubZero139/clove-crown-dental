@@ -138,25 +138,25 @@ Navbar is sticky, transparent on load, blurs on scroll. All links present. Phone
 
 ### Checklist
 
-- [ ] Build `<Hero>` component with Swiper.js carousel:
-  - [ ] Full-viewport-width container, 85-90vh height on desktop, 70vh on mobile
-  - [ ] 3-4 placeholder images (use solid colour blocks or placeholder URLs initially — real stock photos added in Phase 11)
-  - [ ] Crossfade effect (Swiper `effect: 'fade'`), not slide
-  - [ ] Auto-advance every 5-6 seconds
-  - [ ] Pagination dots: white, small, bottom-centre, with active state
-  - [ ] Dots clickable to jump to specific slide
-- [ ] Warm dark scrim overlay: gradient from bottom (#2D2D2D at 40-50% opacity) using CSS `::after` pseudo-element or overlay div
-- [ ] Content overlay (positioned absolute on top of carousel):
-  - [ ] Eyebrow badge: "Now Accepting New Patients" — small, floating badge style with sage background
-  - [ ] Headline: "Dental Care That Feels Different" — Playfair Display, 3.5-4rem desktop, 2rem mobile, white text
-  - [ ] Subheadline: 1-2 sentences, DM Sans, white/off-white
-  - [ ] Primary CTA: "Book Your Visit" (terracotta button)
-  - [ ] Secondary CTA: "Call Us Now" (sage outline button) — shows phone from `SITE_CONFIG`
-- [ ] Split text animation on headline: GSAP + SplitType, characters or words animate in on page load (fade up with slight stagger)
-- [ ] Subtle parallax on carousel images: 10-15% vertical movement on scroll (CSS `transform: translateY()` driven by scroll position or GSAP ScrollTrigger)
-- [ ] Ensure text remains readable across all carousel images (scrim must work)
-- [ ] Mobile: stack CTAs vertically, reduce headline size, ensure dots don't overlap content
-- [ ] Commit and push
+- [x] Build `<Hero>` component with Swiper.js carousel:
+  - [x] Full-viewport-width container, 85-90vh height on desktop, 70vh on mobile
+  - [x] 3-4 placeholder images (use solid colour blocks or placeholder URLs initially — real stock photos added in Phase 11)
+  - [x] Crossfade effect (Swiper `effect: 'fade'`), not slide
+  - [x] Auto-advance every 5-6 seconds
+  - [x] Pagination dots: white, small, bottom-centre, with active state
+  - [x] Dots clickable to jump to specific slide
+- [x] Warm dark scrim overlay: gradient from bottom (#2D2D2D at 40-50% opacity) using CSS `::after` pseudo-element or overlay div
+- [x] Content overlay (positioned absolute on top of carousel):
+  - [x] Eyebrow badge: "Now Accepting New Patients" — small, floating badge style with sage background
+  - [x] Headline: "Dental Care That Feels Different" — Playfair Display, 3.5-4rem desktop, 2rem mobile, white text
+  - [x] Subheadline: 1-2 sentences, DM Sans, white/off-white
+  - [x] Primary CTA: "Book Your Visit" (terracotta button)
+  - [x] Secondary CTA: "Call Us Now" (sage outline button) — shows phone from `SITE_CONFIG`
+- [x] Split text animation on headline: GSAP + SplitType, characters or words animate in on page load (fade up with slight stagger)
+- [x] Subtle parallax on carousel images: 10-15% vertical movement on scroll (CSS `transform: translateY()` driven by scroll position or GSAP ScrollTrigger)
+- [x] Ensure text remains readable across all carousel images (scrim must work)
+- [x] Mobile: stack CTAs vertically, reduce headline size, ensure dots don't overlap content
+- [x] Commit and push
 
 ### Phase 3 — Done Criteria
 Carousel auto-plays with crossfade. Dots work. Headline animates in on load. Parallax shifts images subtly on scroll. Text is readable on all slides. Responsive on mobile.

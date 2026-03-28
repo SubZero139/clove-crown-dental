@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { DM_Sans, Playfair_Display } from "next/font/google";
+import { Navbar } from "@/components/Navbar";
 import { SmoothScroll } from "@/components/SmoothScroll";
 import { SITE_CONFIG } from "@/lib/config";
 import "@/styles/globals.css";
@@ -35,7 +36,10 @@ export default function RootLayout({
     >
       <body className="min-h-full">
         {/* <!-- CHATBOT EMBED SCRIPT HERE --> */}
-        <SmoothScroll>{children}</SmoothScroll>
+        <SmoothScroll>
+          <Navbar />
+          {children}
+        </SmoothScroll>
       </body>
     </html>
   );

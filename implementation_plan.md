@@ -112,19 +112,19 @@ The project runs locally with `npm run dev`. Page is blank except for the warm i
 
 ### Checklist
 
-- [ ] Build `<Navbar>` component with:
-  - [ ] Logo text: "Clove & Crown" in Playfair Display
-  - [ ] Nav links: Services | About | Reviews | Contact (smooth scroll to section anchors)
-  - [ ] Phone number from `SITE_CONFIG` (clickable `tel:` link)
-  - [ ] "Book Now" button (primary/terracotta variant)
-- [ ] Sticky positioning: fixed to top of viewport, full width
-- [ ] Backdrop blur effect: transparent on page load, transitions to semi-transparent ivory + `backdrop-filter: blur(12px)` after scrolling past 100px
-- [ ] Mobile responsive:
-  - [ ] Hamburger menu icon on mobile
-  - [ ] Mobile menu panel (slide-in or dropdown) with all nav links + phone number + Book Now
-  - [ ] Menu closes on link click
-- [ ] z-index high enough to sit above hero carousel
-- [ ] Commit and push
+- [x] Build `<Navbar>` component with:
+  - [x] Logo text: "Clove & Crown" in Playfair Display
+  - [x] Nav links: Services | About | Reviews | Contact (smooth scroll to section anchors)
+  - [x] Phone number from `SITE_CONFIG` (clickable `tel:` link)
+  - [x] "Book Now" button (primary/terracotta variant)
+- [x] Sticky positioning: fixed to top of viewport, full width
+- [x] Backdrop blur effect: transparent on page load, transitions to semi-transparent ivory + `backdrop-filter: blur(12px)` after scrolling past 100px
+- [x] Mobile responsive:
+  - [x] Hamburger menu icon on mobile
+  - [x] Mobile menu panel (slide-in or dropdown) with all nav links + phone number + Book Now
+  - [x] Menu closes on link click
+- [x] z-index high enough to sit above hero carousel
+- [x] Commit and push
 
 ### Phase 2 — Done Criteria
 Navbar is sticky, transparent on load, blurs on scroll. All links present. Phone number clickable. Mobile menu works. Nav doesn't overlap or get hidden behind any content.

@@ -202,38 +202,38 @@ Stats row visible with correct background. Numbers count up when scrolled into v
 ### Checklist
 
 **Services Section:**
-- [ ] Build `<Services>` component:
-  - [ ] Section heading: "What We Offer"
-  - [ ] 6 cards in responsive grid: 3×2 desktop, 2×3 tablet, 1-column mobile
-  - [ ] Each card contains:
-    - [ ] Icon or small illustration (use a simple icon library like Lucide or heroicons, or SVG placeholders)
-    - [ ] Service name (bold)
-    - [ ] 1-line description
-    - [ ] "Learn More →" text link (non-functional, `href="#"`)
-  - [ ] Card content:
+- [x] Build `<Services>` component:
+  - [x] Section heading: "What We Offer"
+  - [x] 6 cards in responsive grid: 3×2 desktop, 2×3 tablet, 1-column mobile
+  - [x] Each card contains:
+    - [x] Icon or small illustration (use a simple icon library like Lucide or heroicons, or SVG placeholders)
+    - [x] Service name (bold)
+    - [x] 1-line description
+    - [x] "Learn More →" text link (non-functional, `href="#"`)
+  - [x] Card content:
     - General Dentistry — "Comprehensive check-ups, cleanings, and preventive care"
     - Cosmetic Dentistry — "Veneers, bonding, and complete smile makeovers"
     - Teeth Whitening — "Professional whitening for a brighter, confident smile"
     - Dental Implants — "Permanent, natural-looking tooth replacement"
     - Emergency Care — "Same-day appointments for urgent dental needs"
     - Invisalign — "Clear aligners for a straighter smile without braces"
-  - [ ] Hover lift effect: `translateY(-4px)` + increased `box-shadow` on hover, smooth transition
-  - [ ] Card background: white or near-white, subtle border (1px solid #E8E4DD or similar)
-  - [ ] Section background: warm ivory (#FAF7F2)
+  - [x] Hover lift effect: `translateY(-4px)` + increased `box-shadow` on hover, smooth transition
+  - [x] Card background: white or near-white, subtle border (1px solid #E8E4DD or similar)
+  - [x] Section background: warm ivory (#FAF7F2)
 
 **Why Patients Choose Us Section:**
-- [ ] Build `<WhyChooseUs>` component:
-  - [ ] Section heading: "Why Patients Choose Us"
-  - [ ] 4 feature blocks in a row (2×2 on mobile):
+- [x] Build `<WhyChooseUs>` component:
+  - [x] Section heading: "Why Patients Choose Us"
+  - [x] 4 feature blocks in a row (2×2 on mobile):
     - **Modern Technology** — "Advanced equipment for precise, comfortable treatment"
     - **Comfort-First Approach** — "Every visit designed around your comfort"
     - **Flexible Scheduling** — "Early morning, evening, and weekend slots available"
     - **Transparent Communication** — "No surprises — clear treatment plans and pricing"
-  - [ ] Each block: icon + title + 2-sentence description
-  - [ ] Background: warm sand (#F3EEE8) to differentiate from services section above
-  - [ ] Hover lift on blocks (same effect as service cards)
+  - [x] Each block: icon + title + 2-sentence description
+  - [x] Background: warm sand (#F3EEE8) to differentiate from services section above
+  - [x] Hover lift on blocks (same effect as service cards)
 
-- [ ] Commit and push
+- [x] Commit and push
 
 ### Phase 5 — Done Criteria
 Both sections render with correct content. Cards have hover lift. Grid is responsive. Visual separation between the two sections is clear.

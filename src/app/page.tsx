@@ -1,9 +1,11 @@
 import { Hero } from "@/components/Hero";
+import { TrustBar } from "@/components/TrustBar";
 
 export default function Home() {
   return (
     <main className="min-h-screen">
       <Hero />
+      <TrustBar />
       <section
         id="services"
         className="min-h-[25vh] scroll-mt-24"

@@ -170,24 +170,24 @@ Carousel auto-plays with crossfade. Dots work. Headline animates in on load. Par
 
 ### Checklist
 
-- [ ] Build `<TrustBar>` component:
-  - [ ] 4 stats in a horizontal row (centred):
+- [x] Build `<TrustBar>` component:
+  - [x] 4 stats in a horizontal row (centred):
     - **500+** Happy Patients
     - **4.9★** Google Rating
     - **15+** Years Experience
     - **Same-Week** Appointments Available
-  - [ ] Background: warm sand (#F3EEE8)
-  - [ ] Generous vertical padding (48-64px)
-- [ ] Counter animation: numbers count up from 0 when section scrolls into view
-  - [ ] Use Intersection Observer to trigger
-  - [ ] "500+" counts from 0 to 500 over ~1.5 seconds
-  - [ ] "4.9" counts from 0.0 to 4.9
-  - [ ] "15+" counts from 0 to 15
-  - [ ] "Same-Week" doesn't count — just fades in
-  - [ ] Each counter starts with a stagger delay (0ms, 150ms, 300ms, 450ms)
-  - [ ] Animation triggers only once (not on every scroll past)
-- [ ] Mobile: 2×2 grid or single column, depending on which looks cleaner
-- [ ] Commit and push
+  - [x] Background: warm sand (#F3EEE8)
+  - [x] Generous vertical padding (48-64px)
+- [x] Counter animation: numbers count up from 0 when section scrolls into view
+  - [x] Use Intersection Observer to trigger
+  - [x] "500+" counts from 0 to 500 over ~1.5 seconds
+  - [x] "4.9" counts from 0.0 to 4.9
+  - [x] "15+" counts from 0 to 15
+  - [x] "Same-Week" doesn't count — just fades in
+  - [x] Each counter starts with a stagger delay (0ms, 150ms, 300ms, 450ms)
+  - [x] Animation triggers only once (not on every scroll past)
+- [x] Mobile: 2×2 grid or single column, depending on which looks cleaner
+- [x] Commit and push
 
 ### Phase 4 — Done Criteria
 Stats row visible with correct background. Numbers count up when scrolled into view. Stagger feels rhythmic. Only fires once. Clean on mobile.

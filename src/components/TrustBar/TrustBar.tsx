@@ -89,7 +89,7 @@ export function TrustBar() {
   return (
     <section
       ref={sectionRef}
-      className="bg-[var(--color-sand)] py-12 md:py-16"
+      className="m-0 border-0 bg-[var(--color-ivory)] py-12 shadow-none outline-none md:py-16"
       aria-label="Practice highlights"
     >
       <div className="mx-auto max-w-6xl px-4 md:px-6">

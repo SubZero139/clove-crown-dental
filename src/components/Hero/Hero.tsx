@@ -114,12 +114,12 @@ export function Hero() {
     <section
       ref={rootRef}
       id="hero"
-      className="relative isolate h-[70vh] w-full md:h-[min(90vh,56rem)]"
+      className="relative isolate m-0 block border-0 shadow-none outline-none h-[70vh] w-full md:h-[min(90vh,56rem)]"
       aria-label="Welcome"
     >
-      <div className="absolute inset-0 z-0 min-h-[inherit]">
+      <div className="absolute inset-0 z-0 m-0 block min-h-[inherit] overflow-hidden p-0">
         <Swiper
-          className="hero-swiper h-full min-h-[inherit] w-full"
+          className="hero-swiper m-0 h-full min-h-[inherit] w-full border-0 shadow-none outline-none"
           modules={[Autoplay, EffectFade]}
           effect="fade"
           fadeEffect={{ crossFade: true }}
@@ -134,16 +134,16 @@ export function Hero() {
         >
           {HERO_SLIDES.map((slide) => (
             <SwiperSlide key={slide.id} className="!h-full min-h-[inherit]">
-              <div className="relative h-full min-h-[inherit] w-full overflow-hidden">
+              <div className="relative m-0 block h-full min-h-[inherit] w-full overflow-hidden p-0 leading-none">
                 <div
                   data-hero-parallax
-                  className="absolute inset-x-0 -top-[7.5%] h-[115%] w-full will-change-transform"
+                  className="absolute inset-x-0 -top-[7.5%] block h-[115%] w-full leading-none will-change-transform"
                 >
                   <img
                     key={resolveHeroImageSrc(slide.src)}
                     src={resolveHeroImageSrc(slide.src)}
                     alt={slide.alt}
-                    className="h-full w-full object-cover object-center"
+                    className="block h-full w-full object-cover object-center"
                     sizes="100vw"
                     loading={slide.id === "1" ? "eager" : "lazy"}
                     decoding="async"
@@ -160,7 +160,8 @@ export function Hero() {
         className="pointer-events-none absolute inset-0 z-[1]"
         style={{
           background:
-            "linear-gradient(to right, rgba(30,30,28,0.85) 0%, rgba(30,30,28,0.6) 40%, rgba(30,30,28,0.15) 65%, transparent 100%)",
+            "linear-gradient(to right, rgba(30,30,28,0.85) 0%, rgba(30,30,28,0.6) 40%, rgba(30,30,28,0.15) 65%, transparent 100%), linear-gradient(to top, rgba(250,247,242,0.5) 0%, transparent 25px)",
+          backgroundBlendMode: "normal",
         }}
         aria-hidden
       />

@@ -25,3 +25,16 @@ body {
   color: var(--color-charcoal);
   font-family: var(--font-body), sans-serif;
 }
+
+/* Hero Swiper: remove horizontal centering margins and any chrome that can cause a seam */
+.hero-swiper.swiper {
+  margin: 0;
+  margin-bottom: 0;
+  border: 0;
+  box-shadow: none;
+  outline: none;
+}
+
+.hero-swiper .swiper-wrapper {
+  margin: 0;
+}

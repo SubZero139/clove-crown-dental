@@ -1,4 +1,9 @@
 export const SITE_CONFIG = {
+  /**
+   * Bump when replacing `public/images/hero-{1,2,3}.jpg` so browsers and CDNs
+   * fetch the new files instead of a cached copy at the same URL.
+   */
+  heroLocalImagesCacheKey: "2",
   name: "Clove & Crown Dental",
   phone: "(512) 555-0173", // PLACEHOLDER — swap before launch
   phoneTel: "tel:+15125550173", // PLACEHOLDER — swap before launch

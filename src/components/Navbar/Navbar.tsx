@@ -55,6 +55,11 @@ export function Navbar() {
     ? "bg-[var(--color-ivory)]/80 shadow-sm backdrop-blur-[12px]"
     : "bg-transparent";
 
+  /** Logo, links, phone, menu icon: white on hero; charcoal on blurred bar */
+  const barForegroundClass = scrolled
+    ? "text-[#2D2D2D]"
+    : "text-[#FFFFFF]";
+
   return (
     <>
       <header
@@ -64,7 +69,7 @@ export function Navbar() {
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 md:px-6 lg:px-8">
           <a
             href="#"
-            className="font-heading shrink-0 text-lg font-semibold tracking-tight text-[var(--color-charcoal)] md:text-xl"
+            className={`font-heading shrink-0 text-lg font-semibold tracking-tight transition-colors duration-300 md:text-xl ${barForegroundClass}`}
             onClick={(e) => {
               e.preventDefault();
               lenis?.scrollTo(0, { immediate: false });
@@ -82,7 +87,7 @@ export function Navbar() {
               <button
                 key={id}
                 type="button"
-                className="text-sm font-medium text-[var(--color-charcoal)] transition-opacity hover:opacity-70"
+                className={`text-sm font-medium transition-colors duration-300 hover:opacity-70 ${barForegroundClass}`}
                 onClick={() => scrollToSection(id)}
               >
                 {label}
@@ -93,7 +98,7 @@ export function Navbar() {
           <div className="hidden items-center gap-6 md:flex">
             <a
               href={SITE_CONFIG.phoneTel}
-              className="text-sm font-medium whitespace-nowrap text-[var(--color-charcoal)] transition-opacity hover:opacity-70"
+              className={`text-sm font-medium whitespace-nowrap transition-colors duration-300 hover:opacity-70 ${barForegroundClass}`}
             >
               {SITE_CONFIG.phone}
             </a>
@@ -104,7 +109,7 @@ export function Navbar() {
 
           <button
             type="button"
-            className="inline-flex h-11 w-11 items-center justify-center rounded-md text-[var(--color-charcoal)] md:hidden"
+            className={`inline-flex h-11 w-11 items-center justify-center rounded-md transition-colors duration-300 md:hidden ${barForegroundClass}`}
             aria-expanded={mobileOpen}
             aria-controls="mobile-nav"
             aria-label={mobileOpen ? "Close menu" : "Open menu"}

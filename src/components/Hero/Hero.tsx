@@ -15,26 +15,37 @@ import { gsap } from "@/lib/animations";
 import "swiper/css";
 import "swiper/css/effect-fade";
 
-const PLACEHOLDER_SLIDES = [
+const HERO_SLIDES = [
   {
     id: "1",
-    style: { background: "linear-gradient(145deg, #6d8274 0%, #4a5c52 100%)" },
+    src: "/images/hero-1.jpg",
+    alt: "Welcoming modern dental reception and waiting area",
   },
   {
     id: "2",
-    style: { background: "linear-gradient(145deg, #b87a65 0%, #8f5d4d 100%)" },
+    src: "/images/hero-2.jpg",
+    alt: "Modern dental practice interior with comfortable seating",
   },
   {
     id: "3",
-    style: { background: "linear-gradient(145deg, #c9ae9a 0%, #9a8574 100%)" },
+    src: "/images/hero-3.jpg",
+    alt: "Bright dental clinic reception and waiting area",
   },
   {
     id: "4",
-    style: { background: "linear-gradient(145deg, #8a9b8f 0%, #5c6b62 100%)" },
+    src: "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?w=1920&q=80",
+    alt: "Welcoming dental office with warm lighting",
   },
 ] as const;
 
-const AUTOPLAY_MS = 5500;
+const AUTOPLAY_MS = 4000;
+
+function resolveHeroImageSrc(src: string) {
+  if (src.startsWith("/")) {
+    return `${src}?v=${SITE_CONFIG.heroLocalImagesCacheKey}`;
+  }
+  return src;
+}
 
 export function Hero() {
   const rootRef = useRef<HTMLElement>(null);
@@ -121,15 +132,24 @@ export function Hero() {
           onSwiper={setSwiper}
           onSlideChange={(s) => setActiveIndex(s.realIndex)}
         >
-          {PLACEHOLDER_SLIDES.map((slide) => (
+          {HERO_SLIDES.map((slide) => (
             <SwiperSlide key={slide.id} className="!h-full min-h-[inherit]">
               <div className="relative h-full min-h-[inherit] w-full overflow-hidden">
                 <div
                   data-hero-parallax
                   className="absolute inset-x-0 -top-[7.5%] h-[115%] w-full will-change-transform"
-                  aria-hidden
-                  style={slide.style}
-                />
+                >
+                  <img
+                    key={resolveHeroImageSrc(slide.src)}
+                    src={resolveHeroImageSrc(slide.src)}
+                    alt={slide.alt}
+                    className="h-full w-full object-cover object-center"
+                    sizes="100vw"
+                    loading={slide.id === "1" ? "eager" : "lazy"}
+                    decoding="async"
+                    fetchPriority={slide.id === "1" ? "high" : undefined}
+                  />
+                </div>
               </div>
             </SwiperSlide>
           ))}
@@ -137,19 +157,19 @@ export function Hero() {
       </div>
 
       <div
-        className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-t from-[#2d2d2d]/50 via-[#2d2d2d]/25 to-[#2d2d2d]/12"
+        className="pointer-events-none absolute inset-0 z-[1]"
+        style={{
+          background:
+            "linear-gradient(to right, rgba(30,30,28,0.85) 0%, rgba(30,30,28,0.6) 40%, rgba(30,30,28,0.15) 65%, transparent 100%)",
+        }}
         aria-hidden
       />
 
-      <div className="absolute inset-0 z-[2] flex flex-col justify-end pb-24 md:pb-28">
-        <div className="pointer-events-none mx-auto flex w-full max-w-4xl flex-col items-center px-4 text-center md:px-6">
-          <div className="pointer-events-auto mb-5 inline-flex rounded-full bg-[var(--color-sage)] px-4 py-1.5 text-xs font-medium tracking-wide text-white shadow-md md:text-sm">
-            Now Accepting New Patients
-          </div>
-
+      <div className="absolute inset-0 z-[2] flex items-center px-4 md:px-6 lg:pl-10 lg:pr-8">
+        <div className="pointer-events-none flex w-[48%] min-w-0 flex-col items-start text-left">
           <h1
             ref={headlineRef}
-            className="font-heading mb-4 max-w-[20ch] text-[2rem] leading-tight font-semibold text-white md:max-w-none md:text-[clamp(2.5rem,5vw,4rem)]"
+            className="font-heading mb-4 text-[2rem] leading-tight font-semibold text-white md:text-[clamp(2.5rem,5vw,4rem)]"
           >
             Dental Care That Feels Different
           </h1>
@@ -159,7 +179,7 @@ export function Hero() {
             clarity, and a calm environment come first.
           </p>
 
-          <div className="flex w-full max-w-md flex-col items-stretch gap-3 sm:max-w-none sm:flex-row sm:justify-center sm:gap-4">
+          <div className="flex w-full max-w-md flex-col items-stretch gap-3 sm:max-w-none sm:flex-row sm:gap-4">
             <Button
               type="button"
               variant="primary"
@@ -178,29 +198,29 @@ export function Hero() {
               </span>
             </a>
           </div>
-        </div>
-      </div>
 
-      <div
-        className="absolute bottom-5 left-0 right-0 z-20 flex justify-center gap-2 md:bottom-8"
-        role="tablist"
-        aria-label="Hero slides"
-      >
-        {PLACEHOLDER_SLIDES.map((slide, i) => (
-          <button
-            key={slide.id}
-            type="button"
-            role="tab"
-            aria-selected={activeIndex === i}
-            aria-label={`Show slide ${i + 1}`}
-            className={`h-2 rounded-full transition-all duration-300 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-transparent ${
-              activeIndex === i
-                ? "w-7 bg-white"
-                : "w-2 bg-white/45 hover:bg-white/70"
-            }`}
-            onClick={() => swiper?.slideToLoop(i)}
-          />
-        ))}
+          <div
+            className="pointer-events-auto mt-8 flex justify-start gap-2"
+            role="tablist"
+            aria-label="Hero slides"
+          >
+            {HERO_SLIDES.map((slide, i) => (
+              <button
+                key={slide.id}
+                type="button"
+                role="tab"
+                aria-selected={activeIndex === i}
+                aria-label={`Show slide ${i + 1}`}
+                className={`h-2 rounded-full transition-all duration-300 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-transparent ${
+                  activeIndex === i
+                    ? "w-7 bg-white"
+                    : "w-2 bg-white/45 hover:bg-white/70"
+                }`}
+                onClick={() => swiper?.slideToLoop(i)}
+              />
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );

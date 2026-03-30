@@ -248,30 +248,30 @@ Both sections render with correct content. Cards have hover lift. Grid is respon
 ### Checklist
 
 **About the Dentist:**
-- [ ] Build `<AboutDentist>` component:
-  - [ ] Section heading: "Meet Your Dentist"
-  - [ ] Two-column layout on desktop: image left, text right. Stacked on mobile.
-  - [ ] Doctor name: "Dr. Sarah Chen" — Playfair Display
-  - [ ] Bio: 2-3 sentences (write warm, patient-first copy — e.g., "Dr. Chen believes every patient deserves to feel heard, understood, and comfortable. With over 15 years of experience and a passion for modern dental technology, she's built Clove & Crown around one idea: dental care should feel different.")
-  - [ ] Credential pills below bio — small rounded badges:
+- [x] Build `<AboutDentist>` component:
+  - [x] Section heading: "Meet Your Dentist"
+  - [x] Two-column layout on desktop: image left, text right. Stacked on mobile.
+  - [x] Doctor name: "Dr. Sarah Chen" — Playfair Display
+  - [x] Bio: 2-3 sentences (write warm, patient-first copy — e.g., "Dr. Chen believes every patient deserves to feel heard, understood, and comfortable. With over 15 years of experience and a passion for modern dental technology, she's built Clove & Crown around one idea: dental care should feel different.")
+  - [x] Credential pills below bio — small rounded badges:
     - "University of Texas Dental School"
     - "American Dental Association Member"
     - "15+ Years in Practice"
-  - [ ] Image: stock photo placeholder (professional, approachable woman, warm tones). Use a placeholder URL or solid colour block initially.
-  - [ ] Image has subtle rounded corners (12px)
+  - [x] Image: stock photo placeholder (professional, approachable woman, warm tones). Use a placeholder URL or solid colour block initially.
+  - [x] Image has subtle rounded corners (12px)
   - [ ] OPTIONAL: clip-path reveal animation on the photo (implement only if straightforward, skip if it risks breaking layout)
 
 **See Our Practice:**
-- [ ] Build `<PracticeGallery>` component:
-  - [ ] Section heading: "See Our Practice"
-  - [ ] 3 images in a row: dental office interior, waiting area, treatment room
-  - [ ] Placeholder images initially (solid colour blocks or placeholder URLs)
-  - [ ] Rounded corners (8-12px)
-  - [ ] Optional: light hover zoom effect (`transform: scale(1.03)` on hover with `overflow: hidden` on container)
-  - [ ] Background: warm ivory (#FAF7F2)
-  - [ ] Mobile: stack images vertically or 1-column
+- [x] Build `<PracticeGallery>` component:
+  - [x] Section heading: "See Our Practice"
+  - [x] 3 images in a row: dental office interior, waiting area, treatment room
+  - [x] Placeholder images initially (solid colour blocks or placeholder URLs)
+  - [x] Rounded corners (8-12px)
+  - [x] Optional: light hover zoom effect (`transform: scale(1.03)` on hover with `overflow: hidden` on container)
+  - [x] Background: warm ivory (#FAF7F2)
+  - [x] Mobile: stack images vertically or 1-column
 
-- [ ] Commit and push
+- [x] Commit and push
 
 ### Phase 6 — Done Criteria
 About section has two-column layout with bio, name, and credential pills. Gallery shows 3 images in a row. Both sections responsive. Placeholder images are clearly marked for replacement.

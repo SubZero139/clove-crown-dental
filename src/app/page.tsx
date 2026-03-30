@@ -1,4 +1,6 @@
+import { AboutDentist } from "@/components/AboutDentist";
 import { Hero } from "@/components/Hero";
+import { PracticeGallery } from "@/components/PracticeGallery";
 import { Services } from "@/components/Services";
 import { TrustBar } from "@/components/TrustBar";
 import { WhyChooseUs } from "@/components/WhyChooseUs";
@@ -10,11 +12,8 @@ export default function Home() {
       <TrustBar />
       <Services />
       <WhyChooseUs />
-      <section
-        id="about"
-        className="min-h-[25vh] scroll-mt-24"
-        aria-label="About"
-      />
+      <AboutDentist />
+      <PracticeGallery />
       <section
         id="reviews"
         className="min-h-[25vh] scroll-mt-24"

@@ -286,31 +286,31 @@ About section has two-column layout with bio, name, and credential pills. Galler
 ### Checklist
 
 **Communication Section:**
-- [ ] Build `<Communication>` component:
-  - [ ] Section heading: "We're Here When You Need Us"
-  - [ ] 3 columns, each with an icon and text:
+- [x] Build `<Communication>` component:
+  - [x] Section heading: "We're Here When You Need Us"
+  - [x] 3 columns, each with an icon and text:
     - **Chat:** icon + "Have a question? Chat with us right now." + "Try it now →" button/link
     - **Call:** icon + "Prefer to talk? Our phone assistant is available 24/7." + phone number from `SITE_CONFIG` (clickable)
     - **Book Online:** icon + "Schedule your appointment in seconds." + "Book Now" button (terracotta)
-  - [ ] Chat column slightly emphasised: subtle background highlight or larger icon
-  - [ ] "Try it now →" link: for now, make it a button that logs to console (`console.log('Chat widget trigger')`) — will be wired to real widget before launch
-  - [ ] No tool names anywhere. No "AI", "Voiceflow", "Retell" in visible text.
-  - [ ] Background: warm sand (#F3EEE8)
-  - [ ] Mobile: stack columns vertically
+  - [x] Chat column slightly emphasised: subtle background highlight or larger icon
+  - [x] "Try it now →" link: for now, make it a button that logs to console (`console.log('Chat widget trigger')`) — will be wired to real widget before launch
+  - [x] No tool names anywhere. No "AI", "Voiceflow", "Retell" in visible text.
+  - [x] Background: warm sand (#F3EEE8)
+  - [x] Mobile: stack columns vertically
 
 **Testimonials Section:**
-- [ ] Build `<Testimonials>` component:
-  - [ ] Section heading: "What Our Patients Say"
-  - [ ] 4 cards in responsive grid (2×2 desktop, 1-column mobile):
+- [x] Build `<Testimonials>` component:
+  - [x] Section heading: "What Our Patients Say"
+  - [x] 4 cards in responsive grid (2×2 desktop, 1-column mobile):
     - "Best dental experience I've ever had. The office is beautiful and the staff made me feel completely at ease." — Sarah T. ★★★★★
     - "I was able to book my appointment through the chat in seconds. So convenient!" — James R. ★★★★★
     - "Beautiful office, friendly staff, and my teeth have never looked better." — Maria L. ★★★★★
     - "Dr. Chen explained everything before starting. First dentist I've actually trusted." — David K. ★★★★★
-  - [ ] Each card: quote text + star rating (★★★★★) + circular avatar (placeholder image, 40-48px) + name
-  - [ ] Hover lift on cards (same effect as service cards)
-  - [ ] Background: warm ivory (#FAF7F2)
+  - [x] Each card: quote text + star rating (★★★★★) + circular avatar (placeholder image, 40-48px) + name
+  - [x] Hover lift on cards (same effect as service cards)
+  - [x] Background: warm ivory (#FAF7F2)
 
-- [ ] Commit and push
+- [x] Commit and push
 
 ### Phase 7 — Done Criteria
 Communication section has 3 columns with correct copy. Chat "Try it now" button logs to console. Phone number pulls from config. Testimonials show 4 cards with avatars, quotes, and star ratings. Hover lift works. Both sections responsive.

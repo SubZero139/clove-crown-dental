@@ -184,6 +184,7 @@ export function Hero() {
             <Button
               type="button"
               variant="primary"
+              magnetic
               className="w-full sm:w-auto"
               onClick={handleBookVisit}
             >

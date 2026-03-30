@@ -23,7 +23,10 @@ export function AboutDentist() {
         </SectionHeading>
 
         <div className="mt-10 grid items-center gap-10 lg:mt-12 lg:grid-cols-2 lg:gap-14">
-          <div className="relative mx-auto w-full max-w-md lg:mx-0 lg:max-w-none">
+          <div
+            data-about-media
+            className="relative mx-auto w-full max-w-md lg:mx-0 lg:max-w-none"
+          >
             <div className="overflow-hidden rounded-xl bg-[var(--color-sand)] shadow-[0_4px_24px_rgba(45,45,45,0.08)]">
               <img
                 src={PORTRAIT_PLACEHOLDER_SRC}
@@ -40,7 +43,7 @@ export function AboutDentist() {
             </p>
           </div>
 
-          <div className="text-center lg:text-left">
+          <div data-about-copy className="text-center lg:text-left">
             <h3 className="font-heading text-2xl font-semibold text-[var(--color-charcoal)] sm:text-3xl">
               Dr. Sarah Chen
             </h3>

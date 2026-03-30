@@ -20,7 +20,7 @@ export function ContactCTA() {
   return (
     <section
       id="contact"
-      className="scroll-mt-24 bg-[var(--color-ivory)] py-12 md:py-20"
+      className="contact-cta-gradient scroll-mt-24 py-12 md:py-20"
       aria-labelledby="contact-cta-heading"
     >
       <div className="mx-auto max-w-6xl px-4 md:px-6">
@@ -29,7 +29,7 @@ export function ContactCTA() {
         </SectionHeading>
 
         <div className="mt-10 grid gap-10 lg:mt-14 lg:grid-cols-2 lg:items-start lg:gap-12">
-          <div className="flex flex-col">
+          <div className="contact-cta-animate flex flex-col">
             <p className="text-base leading-relaxed text-[var(--color-charcoal)]/90 md:text-lg">
               Take the first step toward a calmer, more comfortable dental
               experience. We&apos;d love to welcome you to Clove &amp; Crown.
@@ -37,6 +37,7 @@ export function ContactCTA() {
             <Button
               type="button"
               variant="primary"
+              magnetic
               className="mt-8 w-full px-8 py-4 text-base sm:w-fit"
               onClick={scrollToContact}
             >
@@ -53,7 +54,7 @@ export function ContactCTA() {
             </a>
           </div>
 
-          <div className="flex flex-col gap-4">
+          <div className="contact-cta-animate flex flex-col gap-4">
             <div
               className="flex min-h-[220px] flex-col items-center justify-center rounded-xl border border-[#E8E4DD] bg-[var(--color-sand)] px-6 py-10 text-center md:min-h-[280px]"
               role="img"

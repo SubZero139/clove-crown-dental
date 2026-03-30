@@ -102,7 +102,12 @@ export function Navbar() {
             >
               {SITE_CONFIG.phone}
             </a>
-            <Button type="button" variant="primary" onClick={scrollToBook}>
+            <Button
+              type="button"
+              variant="primary"
+              magnetic
+              onClick={scrollToBook}
+            >
               Book Now
             </Button>
           </div>
@@ -178,6 +183,7 @@ export function Navbar() {
             <Button
               type="button"
               variant="primary"
+              magnetic
               className="w-full"
               onClick={scrollToBook}
             >

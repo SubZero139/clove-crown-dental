@@ -13,6 +13,7 @@ export function SectionHeading({
 }: SectionHeadingProps) {
   return (
     <Tag
+      data-scroll-heading
       className={`font-heading text-3xl font-semibold tracking-tight text-[var(--color-charcoal)] sm:text-4xl ${className}`.trim()}
       {...props}
     >

@@ -373,39 +373,39 @@ All 11 sections are on the page. The full page scrolls top to bottom. Footer is 
 ### Checklist
 
 **Scroll-triggered animations (GSAP ScrollTrigger or AOS):**
-- [ ] Choose library: GSAP ScrollTrigger (recommended — already installed) or AOS
-- [ ] Apply fade-up entrance animation to every section's content:
-  - [ ] Section headings: fade up
-  - [ ] Service cards: staggered fade up (100-150ms delay between cards)
-  - [ ] Why Choose Us blocks: staggered fade up
-  - [ ] About section: image fades from left, text fades from right
-  - [ ] Gallery images: staggered fade up
-  - [ ] Communication columns: staggered fade up
-  - [ ] Testimonial cards: staggered fade up
-  - [ ] Contact section: fade up
-- [ ] All animations trigger once (no replay on scroll back)
-- [ ] Start position: elements begin ~30-40px below final position with `opacity: 0`
-- [ ] Duration: 0.6-0.8 seconds per element
-- [ ] Easing: `ease-out` or GSAP `power2.out`
+- [x] Choose library: GSAP ScrollTrigger (recommended — already installed) or AOS
+- [x] Apply fade-up entrance animation to every section's content:
+  - [x] Section headings: fade up
+  - [x] Service cards: staggered fade up (100-150ms delay between cards)
+  - [x] Why Choose Us blocks: staggered fade up
+  - [x] About section: image fades from left, text fades from right
+  - [x] Gallery images: staggered fade up
+  - [x] Communication columns: staggered fade up
+  - [x] Testimonial cards: staggered fade up
+  - [x] Contact section: fade up
+- [x] All animations trigger once (no replay on scroll back)
+- [x] Start position: elements begin ~30-40px below final position with `opacity: 0`
+- [x] Duration: 0.6-0.8 seconds per element
+- [x] Easing: `ease-out` or GSAP `power2.out`
 
 **Magnetic hover on CTAs:**
-- [ ] Create a reusable magnetic hover utility/hook
-- [ ] Apply to all "Book Now" and "Book Your Visit" buttons across the page
-- [ ] Effect: button translates 3-5px toward cursor position on hover, returns on mouse leave
-- [ ] Smooth transition (not jarring)
+- [x] Create a reusable magnetic hover utility/hook
+- [x] Apply to all "Book Now" and "Book Your Visit" buttons across the page
+- [x] Effect: button translates 3-5px toward cursor position on hover, returns on mouse leave
+- [x] Smooth transition (not jarring)
 
 **Gradient background animation:**
-- [ ] Apply to Contact/CTA section (Phase 8)
-- [ ] Slow CSS animation: background shifts between sage-tinted ivory and ivory (very subtle)
-- [ ] Animation duration: 8-10 seconds, infinite loop
-- [ ] Must not distract from content
+- [x] Apply to Contact/CTA section (Phase 8)
+- [x] Slow CSS animation: background shifts between sage-tinted ivory and ivory (very subtle)
+- [x] Animation duration: 8-10 seconds, infinite loop
+- [x] Must not distract from content
 
 **Verify smooth scroll:**
-- [ ] Confirm Lenis is still working correctly after all sections are on the page
-- [ ] Nav anchor links smooth-scroll to correct sections
-- [ ] No scroll jank or stuttering with animations active
+- [x] Confirm Lenis is still working correctly after all sections are on the page
+- [x] Nav anchor links smooth-scroll to correct sections
+- [x] No scroll jank or stuttering with animations active
 
-- [ ] Commit and push
+- [x] Commit and push
 
 ### Phase 9 — Done Criteria
 Every section animates in on scroll. Animations fire only once. Magnetic hover works on all CTA buttons. Gradient animation is visible but subtle on the CTA section. Smooth scroll works throughout. No performance issues.

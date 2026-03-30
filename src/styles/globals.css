@@ -38,3 +38,34 @@ body {
 .hero-swiper .swiper-wrapper {
   margin: 0;
 }
+
+/* Phase 9: subtle sage-tinted ivory ↔ ivory shift on contact CTA */
+.contact-cta-gradient {
+  background: linear-gradient(
+    125deg,
+    var(--color-ivory) 0%,
+    #eef2ee 32%,
+    var(--color-ivory) 56%,
+    #e9ede8 100%
+  );
+  background-size: 320% 320%;
+  animation: contact-cta-gradient-shift 9s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-cta-gradient {
+    animation: none;
+    background: var(--color-ivory);
+  }
+}
+
+@keyframes contact-cta-gradient-shift {
+  0%,
+  100% {
+    background-position: 0% 40%;
+  }
+
+  50% {
+    background-position: 100% 60%;
+  }
+}

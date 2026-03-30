@@ -3,6 +3,7 @@ import { Communication } from "@/components/Communication";
 import { ContactCTA } from "@/components/ContactCTA";
 import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
+import { PageScrollAnimations } from "@/components/PageScrollAnimations";
 import { PracticeGallery } from "@/components/PracticeGallery";
 import { Services } from "@/components/Services";
 import { Testimonials } from "@/components/Testimonials";
@@ -12,6 +13,7 @@ import { WhyChooseUs } from "@/components/WhyChooseUs";
 export default function Home() {
   return (
     <main className="min-h-screen">
+      <PageScrollAnimations />
       <Hero />
       <TrustBar />
       <Services />

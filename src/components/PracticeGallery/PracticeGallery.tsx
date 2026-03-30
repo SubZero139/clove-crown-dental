@@ -28,7 +28,10 @@ export function PracticeGallery() {
         <SectionHeading id="practice-gallery-heading" className="text-center">
           See Our Practice
         </SectionHeading>
-        <p className="mx-auto mt-3 max-w-2xl text-center text-sm text-[var(--color-charcoal)]/60">
+        <p
+          data-scroll-lead
+          className="mx-auto mt-3 max-w-2xl text-center text-sm text-[var(--color-charcoal)]/60"
+        >
           Placeholder photos — replace with warm-toned practice photography in
           Phase 10.
         </p>

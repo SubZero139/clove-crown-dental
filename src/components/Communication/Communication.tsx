@@ -96,6 +96,7 @@ export function Communication() {
               <Button
                 type="button"
                 variant="primary"
+                magnetic
                 className="mt-5 w-fit"
                 onClick={scrollToContact}
               >

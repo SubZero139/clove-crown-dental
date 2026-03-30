@@ -325,9 +325,9 @@ Communication section has 3 columns with correct copy. Chat "Try it now" button 
 ### Checklist
 
 **Contact/CTA Section:**
-- [ ] Build `<ContactCTA>` component:
-  - [ ] Section heading: "Ready to Book Your Visit?"
-  - [ ] Two-column layout on desktop:
+- [x] Build `<ContactCTA>` component:
+  - [x] Section heading: "Ready to Book Your Visit?"
+  - [x] Two-column layout on desktop:
     - **Left column:**
       - CTA copy (1-2 sentences encouraging booking)
       - "Book Now" button (large, terracotta)
@@ -336,29 +336,29 @@ Communication section has 3 columns with correct copy. Chat "Try it now" button 
     - **Right column:**
       - Static Google Maps placeholder (use a grey box with "Map" text or a static map image URL)
       - Address: from `SITE_CONFIG`
-  - [ ] Background: will receive gradient animation in Phase 9
-  - [ ] Mobile: stacked (CTA on top, map below)
+  - [x] Background: will receive gradient animation in Phase 9
+  - [x] Mobile: stacked (CTA on top, map below)
 
 **Footer:**
-- [ ] Build `<Footer>` component:
-  - [ ] Practice name: "Clove & Crown Dental" in Playfair Display
-  - [ ] Tagline: one short line (e.g., "Dental care that feels different.")
-  - [ ] Quick links: Services | About | Reviews | Contact | Privacy Policy (all anchor links except Privacy which is `#`)
-  - [ ] Social media icons: Instagram, Facebook, Twitter (placeholder `#` links, use icon library)
-  - [ ] Phone number from `SITE_CONFIG` (clickable)
-  - [ ] Copyright: "© 2026 Clove & Crown Dental. All rights reserved."
-  - [ ] Background: charcoal (#2D2D2D) or dark sage, light text
-  - [ ] Sufficient padding, clean layout
+- [x] Build `<Footer>` component:
+  - [x] Practice name: "Clove & Crown Dental" in Playfair Display
+  - [x] Tagline: one short line (e.g., "Dental care that feels different.")
+  - [x] Quick links: Services | About | Reviews | Contact | Privacy Policy (all anchor links except Privacy which is `#`)
+  - [x] Social media icons: Instagram, Facebook, Twitter (placeholder `#` links, use icon library)
+  - [x] Phone number from `SITE_CONFIG` (clickable)
+  - [x] Copyright: "© 2026 Clove & Crown Dental. All rights reserved."
+  - [x] Background: charcoal (#2D2D2D) or dark sage, light text
+  - [x] Sufficient padding, clean layout
 
 **Chat widget placeholder:**
-- [ ] Add a floating placeholder button in bottom-right corner:
-  - [ ] Circular, 56-60px, terracotta or sage background
-  - [ ] Chat icon (speech bubble)
-  - [ ] Fixed position, `bottom: 24px; right: 24px;`
-  - [ ] On click: logs to console (`console.log('Chat widget placeholder clicked')`)
-  - [ ] This will be replaced with the real Voiceflow/Convocore embed before launch
+- [x] Add a floating placeholder button in bottom-right corner:
+  - [x] Circular, 56-60px, terracotta or sage background
+  - [x] Chat icon (speech bubble)
+  - [x] Fixed position, `bottom: 24px; right: 24px;`
+  - [x] On click: logs to console (`console.log('Chat widget placeholder clicked')`)
+  - [x] This will be replaced with the real Voiceflow/Convocore embed before launch
 
-- [ ] Commit and push
+- [x] Commit and push
 
 ### Phase 8 — Done Criteria
 All 11 sections are on the page. The full page scrolls top to bottom. Footer is at the bottom. Chat placeholder floats in bottom-right. Every phone number instance pulls from `SITE_CONFIG`. The page is structurally complete — no section is missing.

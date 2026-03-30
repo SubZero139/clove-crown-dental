@@ -1,0 +1,1 @@
+export { ChatWidgetPlaceholder } from "./ChatWidgetPlaceholder";

@@ -1,5 +1,7 @@
 import { AboutDentist } from "@/components/AboutDentist";
 import { Communication } from "@/components/Communication";
+import { ContactCTA } from "@/components/ContactCTA";
+import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
 import { PracticeGallery } from "@/components/PracticeGallery";
 import { Services } from "@/components/Services";
@@ -18,11 +20,8 @@ export default function Home() {
       <PracticeGallery />
       <Communication />
       <Testimonials />
-      <section
-        id="contact"
-        className="min-h-[25vh] scroll-mt-24"
-        aria-label="Contact"
-      />
+      <ContactCTA />
+      <Footer />
     </main>
   );
 }

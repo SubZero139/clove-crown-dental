@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { DM_Sans, Playfair_Display } from "next/font/google";
+import { ChatWidgetPlaceholder } from "@/components/ChatWidgetPlaceholder";
 import { Navbar } from "@/components/Navbar";
 import { SmoothScroll } from "@/components/SmoothScroll";
 import { SITE_CONFIG } from "@/lib/config";
@@ -39,6 +40,7 @@ export default function RootLayout({
         <SmoothScroll>
           <Navbar />
           {children}
+          <ChatWidgetPlaceholder />
         </SmoothScroll>
       </body>
     </html>
